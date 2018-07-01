@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "549231758953",
+    "firebase_url": "https://twdjournalapp.firebaseio.com",
+    "project_id": "twdjournalapp",
+    "storage_bucket": "twdjournalapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:549231758953:android:faebe16bf5cc61c3",
+        "android_client_info": {
+          "package_name": "com.thewebduke.android.journalapp.twd.alcjournalapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "549231758953-eqip8ji3j1li1vvibg86r26ej6cs7fq3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.thewebduke.android.journalapp.twd.alcjournalapp",
+            "certificate_hash": "46257bcd01ff443198ff0781b566cfa0375a08d6"
+          }
+        },
+        {
+          "client_id": "549231758953-luh7g7l3l7l10432bju9b54brtlktnh3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAa9O3WANV2ObI4EpXAh_Laf9RT-9sC8Us"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "549231758953-luh7g7l3l7l10432bju9b54brtlktnh3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
