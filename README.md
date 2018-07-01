@@ -6,6 +6,12 @@ Journaling Application
 
 Simply Fork my app and download to your Android Studio.
 
+Once the app starts up, it will ask for a Google Login Account, simply select your Google Account or Create a new one.
+Start adding in your Journals / Tasks by clicking on the Plus button on the top right hand side.
+You can View and Edit at the same time but click on the VIEW button no each Journal entry that you have made.
+
+Note that a Journal Entry is the same as a Task Entry hence the application uses both terminology.
+
 ### Prerequisites
 
 Your Android Emulator must have the lastest version of the Google Play Services installed.
@@ -25,9 +31,7 @@ Deployment is done via the Android Emulator.  You can also install a copy of the
 
 ## Built With
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
+Android Studio 3.1.3
 
 
 ## Versioning

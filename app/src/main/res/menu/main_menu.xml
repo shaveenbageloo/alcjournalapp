@@ -6,4 +6,10 @@
         android:icon="@android:drawable/ic_menu_add"
         android:title="Add Task"
         app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_login"
+        android:icon="@android:drawable/ic_dialog_info"
+        android:title="Login"
+        app:showAsAction="always" />
 </menu>
