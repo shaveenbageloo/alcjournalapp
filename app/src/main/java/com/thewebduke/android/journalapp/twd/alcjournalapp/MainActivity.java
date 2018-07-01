@@ -10,9 +10,11 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.thewebduke.android.journalapp.twd.alcjournalapp.com.thewebduke.android.journalapp.twd.alcjournalapp.db.TaskContract;
 import com.thewebduke.android.journalapp.twd.alcjournalapp.com.thewebduke.android.journalapp.twd.alcjournalapp.db.TaskDbHelper;
@@ -25,6 +27,47 @@ public class MainActivity extends AppCompatActivity {
     private TaskDbHelper mHelper;
     private ListView mTaskListView;
     private ArrayAdapter<String> mAdapter;
+
+
+
+    public void viewTask(View view) {
+
+        View parent = (View) view.getParent();
+        TextView taskTextView = (TextView) parent.findViewById(R.id.task_title);
+        final String task = String.valueOf(taskTextView.getText());
+
+
+
+
+        final EditText newTaskTemp = new EditText(this);
+        AlertDialog dialog = new AlertDialog.Builder(this)
+                .setTitle("Update this Task?")
+                .setMessage(task)
+                .setView(newTaskTemp)
+                .setPositiveButton("Update", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        String newTask = String.valueOf(newTaskTemp.getText());
+                        SQLiteDatabase db = mHelper.getWritableDatabase();
+
+                        ContentValues values = new ContentValues();
+                        values.put(TaskContract.TaskEntry.COL_TASK_TITLE, newTask);
+
+                        db.update(TaskContract.TaskEntry.TABLE, values, TaskContract.TaskEntry.COL_TASK_TITLE + " = ?", new String[] {task});
+                        //db.delete(TaskContract.TaskEntry.TABLE, TaskContract.TaskEntry.COL_TASK_TITLE + " = ?", new String[]{task});
+                        //db.insertWithOnConflict(TaskContract.TaskEntry.TABLE, null, values,SQLiteDatabase.CONFLICT_REPLACE);
+                        db.close();
+                        updateUI();
+
+                    }
+                })
+                .setNegativeButton("Cancel", null)
+                .create();
+        dialog.show();
+
+    }
+
 
 
     private void updateUI() {
