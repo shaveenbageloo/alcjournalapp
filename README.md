@@ -26,8 +26,11 @@ To install on  your phone, please enable installing from Unknown Sources: https:
 Best to follow and setup your Android Studio by following these steps:
 https://developer.android.com/topic/google-play-instant/getting-started/first-instant-app
 
-To install the APK onto you Android phone, simply click here:
+To install the APK onto you Android phone, please first download the APK to your phone from here:
 https://drive.google.com/open?id=1UREs2s9-V14ibTCqKryzQFpfaDSGN6o5
+
+Once downloaded, then open the file to start the installation onto your phone.
+
 
 
 
