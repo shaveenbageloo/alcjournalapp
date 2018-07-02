@@ -128,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_add_task:
                 final EditText taskEditText = new EditText(this);
                 AlertDialog dialog = new AlertDialog.Builder(this)
-                        .setTitle("Add a new task")
+                        .setTitle("Add a new Journal Entry")
                         .setMessage("What do you want to do next?")
                         .setView(taskEditText)
                         .setPositiveButton("Add", new DialogInterface.OnClickListener() {
@@ -168,7 +168,7 @@ public class MainActivity extends AppCompatActivity {
 
         final EditText newTaskTemp = new EditText(this);
         AlertDialog dialog = new AlertDialog.Builder(this)
-                .setTitle("Update this Task?")
+                .setTitle("Update this Jouernal Entry?")
                 .setMessage(task)
                 .setView(newTaskTemp)
                 .setPositiveButton("Update", new DialogInterface.OnClickListener() {
