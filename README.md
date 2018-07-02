@@ -18,13 +18,18 @@ Your Android Emulator must have the lastest version of the Google Play Services 
 
 Update Google Play Services
 
+To install on  your phone, please enable installing from Unknown Sources: https://gs4.gadgethacks.com/forum/enable-unknown-sources-android-install-apps-outside-play-store-0150603/
+
+
 ### Installing
 
 Best to follow and setup your Android Studio by following these steps:
 https://developer.android.com/topic/google-play-instant/getting-started/first-instant-app
 
 To install the APK onto you Android phone, simply click here:
-https://drive.google.com/open?id=1r76FRh5LIC97YqZbeBj_2zWMxC1Dqtto
+https://drive.google.com/open?id=1UREs2s9-V14ibTCqKryzQFpfaDSGN6o5
+
+
 
 
 
